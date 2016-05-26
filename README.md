@@ -12,7 +12,7 @@ I will follow the spirit of the other tutorials I wrote and keep using plateform
 
 Please register an account on the [Travis](https://travis-ci.org/) testing platform, preferably using your github account so that your repository can be automatically linked into your Travis account.
 
-## Create and run unit tests locally with docker.
+## Create and run unit tests locally with docker
 
 In your app folder, create a file called `test_app.py` containing the following test code for your application:
 
