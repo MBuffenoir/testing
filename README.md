@@ -2,7 +2,7 @@
 
 This tutorial is part of a series on how to create CI/CD pipelines for your web applications using Docker containers. It is following up the first part focused on [how to use Docker Hub to automatically build your applications images](https://www.linux.com/learn/integrating-docker-hub-your-application-build-process).
 
-Application testing is key for a properly functioning web application. There are many ways to test your application, but we will focus here on the essential unit tests and see how we can integrates Docker in the process.[Need another sentence or two discussing Travis and explaining why automatic testing is useful.]
+Application testing is key for a properly functioning web application. It will help you ensure that already tested scenarii keep running properly whenever newer features are added to your project. There are many ways to test your application, but we will focus here on the essential unit tests and see how we can integrates Docker in the process. We will use here the online Travis-ci platform to automate the process of running those units tests.
 
 ## Requirements
 
@@ -13,7 +13,11 @@ I will follow the spirit of the other tutorials I wrote and keep using platforms
 Please register an account on the [Travis](https://travis-ci.org/) testing platform, preferably using your GitHub account so that your repository can be automatically linked into your Travis account.
 
 ## Create and run unit tests locally with Docker
-[Can you add a sentence or two here about why you're doing this locally and on Docker first? ie Before I show you how to set up automatic testing, it's helpful to run a local test to get a good sense of how the process works and to make sure you're setting it up to get the outcome you want.]
+
+Of course, before running your tests on Travis, you will first want to run then locally to ensure they function properly.
+
+Let's see how you can achieve such thing by adding a few basic units tests to your project and run them using the Docker image of your project.
+
 In your app folder, create a file called `test_app.py` containing the following test code for your application:
 
 ```
