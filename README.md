@@ -16,7 +16,7 @@ Please register an account on the [Travis](https://travis-ci.org/) testing platf
 
 Of course, before running your tests on Travis, you will first want to run then locally to ensure they function properly.
 
-Let's see how you can achieve such thing by adding a few basic units tests to your project and run them using the Docker image of your project.
+Let's see how you can achieve such thing by adding a few basic units tests to your project and run them using the Docker image.
 
 In your app folder, create a file called `test_app.py` containing the following test code for your application:
 
